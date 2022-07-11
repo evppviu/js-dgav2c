@@ -1,0 +1,13 @@
+h1, h2 {
+  font-family: Lato;
+}
+.titulo {
+  background-color: rgb(252, 136, 3);
+  text-align:center;
+}
+.subtitulo {
+  background-color: rgb(133, 59, 17);
+  color: white;
+  font-weight: bold;
+  text-align:center;
+}

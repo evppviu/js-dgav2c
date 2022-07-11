@@ -1,0 +1,152 @@
+<div class="titulo">
+<h1><br>
+  Efectividad en la Entrega de Productos
+<br><br></h1>
+ </div>
+<br>
+<b>Nombre: Elizabeth Victoria Pérez Pacheco 
+<br>
+<br>
+<!-- Link stackblitz-->
+URL: <a href="https://js-dgav2c.stackblitz.io">https://js-dgav2c.stackblitz.io </a>
+<br>
+<br>
+<!-- Usuario github-->
+GitHub: <a href="https://github.com/evppviu/">https://github.com/evppviu/ </a>
+<br>
+<br>
+<!-- Fecha-->
+Fecha: 11/07/2022 </b></a>
+<br>
+<br>
+<br>
+<div class="subtitulo">
+<h2>
+  Introducción
+</h2>
+ </div>
+La empresa se dedica a la creación de pedidos especializados para cada cliente, el presente trabajo, se enfoca en el área de entregas al cliente. Se cuenta con un sistema de entregas mediante el cual se realiza el registro de pedidos, se asigna la empresa que entregará el pedido y si amerita control biométrico, también ayuda al seguimiento del pedido.
+<br><br>
+Se debe evaluar si los pedidos ameritan control biométrico, para ello el negocio ha definido las siguientes reglas: 
+<br>
+<p align="center">
+<iframe width="518" height="139" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSj_91DATObVEq213NMu1MZjsVOvBkBzalM_82SHyzIveN8OQ9ZTKqgvdSrgQfi5fskLfFeU8GGvJx_/pubchart?oid=1724698446&amp;format=interactive"></iframe>
+<br>Fuente de datos:<a href="https://docs.google.com/spreadsheets/d/1Pcn-R5YC5xwlXcRVhRHcD1uSBWPxSX5GIYRYkeLxGxI/edit?usp=sharing">Reglas de Biometría</a></p>
+<br>
+Las reglas biométricas son importantes, porque reducen el riesgo de una entrega incorrecta ya que genera pérdidas económicas y daños en la reputación. Se puede observar algunas características importantes de los pedidos como lo son:
+<br><ul>
+<b>1. Tipo de creación:</b> Representa cómo se crea el pedido, se categoriza de acuerdo al producto que puede ser solicitado por un cliente nuevo, puede ser un producto que reemplace otro o si es la empresa la que le ofrece un nuevo producto, ya que se los productos tienen una fecha de vencimiento. 
+<br>
+<b>2. Tipo de venta:</b> Indica la forma en que se contactó al cliente.
+<br>
+<b>3. Monto:</b> Es el total que representa el pedido, que puede tener más de un producto pero asociados a un cliente principal.
+<br>
+<b>4. Indicador digital:</b> Indica si la venta se realizó a través de un canal digital como web o aplicación móvil.
+</ul><br>
+Al tratarse de la entrega de productos también se tienen metas relacionadas a la cantidad de días para la entrega del pedido al cliente, la meta es que el 95% de los pedidos se entreguen en un máximo de 7 días, sin embargo, algunos pedidos pueden haberse entregado luego de varios días de lo esperado e incluso algunos no logran entregarse. El presente informe se va a centrar en los meses de Setiembre, Octubre, Noviembre y Diciembre, a estos datos se le ha realizado un tratamiento previo (se retiró los valores atípicos, valores nulos y se actualizaron algunos valores para proteger la confidencialidad de los datos).
+<br>
+<div class="subtitulo">
+  <h2>
+    Objetivos
+  </h2>
+</div></br>
+El equipo de negocio encargado de la gestión de entrega de productos desea evaluar la situación actual de las entregas de pedidos relacionada al cumplimiento de la meta de las entrega y el control biométrico. Se espera contestar preguntas como: 
+<ul>
+¿Qué tipos de creación tiene mejor cumplimiento de entrega o tiene el monto de pedido promedio más elevado?
+<br>
+¿Qué tan cerca de la meta ha estado el negocio en estos cuatro meses?
+<br>
+¿En qué tipos de pedidos se deben enfocar las estrategias?
+</ul>
+<br>
+El presente análisis va dirigido al equipo de negocio responsable de las entregas, para que puedan revisar el estado presente y datos históricos de hace 3 meses para plantearse estrategias que permitan mejorar el cumplimiento de las entregas, sin embargo, también sirve para la presentación de indicadores del área que se muestra a otras áreas por lo que se espera que sea entendible por una audiencia sin conocimientos específicos.
+<br>
+Para la presentación gráfica de la información se han empleado Google Sheets y Power BI debido a que se cuentan con 194912 registros y Datawrapper no podía procesarlos desde Google Sheets ni importarlos como documento Excel.
+<br>
+<div class="subtitulo">
+  <h2>
+    Análisis
+  </h2>
+ </div>
+ <br>
+ Primero se debe saber si se está cumpliendo la meta de entrega, para ello se evalúa el campo de cumplimiento de cada pedido, se observa que se tiene un buen porcentaje de cumplimiento de la meta, sin embargo no cumple la meta de entrega esperada.
+ <br>
+ <p align="center">
+ <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTBUga8XHzlVHvWYWw_ptCBLGMxZh8ALpWsOAd3Ahzw2FIFIwyryM_XDE5QBDFn5yL7aCRQgzmH1cd/pubchart?oid=1530650597&amp;format=interactive"></iframe>
+ <br>Fuente de datos:<a href="https://docs.google.com/spreadsheets/d/13ysafvG-jSu0fKXdSnN0-AsY1Gzd_3XR2Ie8Z5RHHv8/edit?usp=sharing">Pedidos</a></p>
+ <br>
+ También se han identificado algunas características relevantes de los pedidos para la asignación biométrica, entre estas características se tiene el tipo de creación, por ello se desea saber la cantidad de pedidos por tipo de creación durante los cuatro meses: <br>
+ <p align="center">
+ <iframe title="PedidosxTipoCreacion - Pedidos por Creación y Mes" width="940" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=acaf6ff0-03cd-49be-8219-f64322c05fbd&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+ <br>
+ Se observa que la gran mayoría de pedidos tienen el tipo de creación "ADMISIÓN" que nos indicaría que los esfuerzos para mejorar los indicadores deberían centrarse en este tipo de pedidos.
+ <br>
+ <br>
+ También se puede ir comparando la evolución de la cantidad de pedidos por tipo de creación durante los cuatro meses del estudio:
+ <br>
+ <p align="center">
+ <iframe title="PedidosxMesxTipoCreacion - Pedidos por Creación y Mes" width="840" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=5b0c83f7-0e9e-4d9c-b65a-52b1148396b0&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+ <br>
+ Se observa que durante todos los meses del estudio los pedidos de admisión han sido la mayoría, lo que sugiere que es un grupo importante para aplicar estrategias.<br>
+ Sin embargo, el tipo de creación no es el único dato relevante se puede también comparar las cantidades de pedidos por el tipo de venta, por mes y por tipo de creación:
+ <br>
+ <p align="center">
+  <iframe title="AdmisionxTipoVenta - Pedidos por Tipo de Venta y Mes" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=988fc9b6-aa2c-4917-95a1-73af7500e923&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+<br>
+Se observa que el tipo de venta Televentas representa la mayor cantidad de pedidos, adicionalmente se encuentra presente dentro del tipo de creación de Admisión que también corresponde a la mayoría de pedidos, por lo tanto es conveniente poder analizar cómo han ido evolucionando la cantidad de pedidos Telventa durante estos cuatro meses:
+<br>
+<p align="center">
+<iframe title="EvolucionTeleventas - Televentas" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=1dd13b1f-c2b1-4c24-8442-a0ffcde60eaf&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+<br>
+Se está dejando habilitada la opción de filtrar por tipos de venta, en caso se desee visualizar los datos de otros tipos de venta.
+Se observa que las Televentas presentaron una ligera caída en el primer mes, pero luego han estado en crecimiento, por lo que se puede considerar que tienen tendencia al crecimiento, sin embargo una tendencia de sólo cuatro meses no es adecuada por lo que se debe considerar obtener datos de más períodos de tiempo para poder determinar la tendencia.
+<br>
+De acuerdo a la muestra la mayoría de pedidos son admisiones televentas.<br>
+También se debe recordar que el monto del pedido era un atributo importante por lo que se puede revisar la evolución del promedio del monto de los pedidos por tipos de venta:
+<br>
+<p align="center">
+  <iframe title="PedidosxMontoxMes - Pedidos por Creación, Tipo Venta y Mes" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7f732b9b-3f28-4e86-87d8-c0af8c21a406&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+<br>
+Se observa que el promedio de los pedidos masivo es más elevado que el de otros tipos de venta, mientras que Televentas tiene el menor promedio en el monto de los pedidos, pero sabemos que las televentas representan un importante volumen de los pedidos recibidos por lo que sigue siendo importante enfocarse en este tipo de venta para evaluar estrategias que permitan elevar el monto de los pedidos como promociones; también se puede evaluar acciones para incrementar el volumen de pedidos con tipo de venta "Masivo" ya que estos pedidos tienen un elevado monto.
+<br>
+Se observa que se tienen pedidos televentas con un monto menor a 10000 por lo que se esperaría que no se tenga mucho cumplimiento de biometría porque estos pedidos representan la mayoría de la muestra. Por lo que se puede observar que el indicador biométrico. 
+<br>
+<p align="center">
+  <iframe title="CumplimientoMeta - Biometria" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c763347e-4da8-40c4-bfeb-f0b780290e6c&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+<br>
+Se encontró lo esperado, la mayoría de pedidos tiene un indicador de biometría 0 que indica que el pedido no amerita control biométrico, esto debido a que las reglas para ello no aplican a la mayoría de pedidos. Considerando la importancia del control biométrico se va a revisar la evolución del mismo por mes y tipo de creación:
+<br>
+<p align="center">
+<iframe title="BiometriaxTipoCreacion - Biometría por Creación y Mes" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=53c85969-78a7-4db3-b8b9-b90684b06242&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+</p>
+<br>
+Se observa que sólo las admisiones tienen un indicador de biometría positivo, por lo que sumado a que es el tipo de creación mayoritario, es conveniente enfocar los esfuerzos en este tipo de pedidos si se desea incrementar la cantidad de pedidos con indicdor biométrico.
+<br>
+<br>
+<div class="subtitulo">
+  <h2>
+    Conclusiones
+  </h2>
+ </div>
+ <br>
+ <b>Negocio:</b>
+ Se ha encontrado que los pedidos tienen características similares en el tipo de creación o el tipo de venta, ya que hay una gran diferencia en la cantidad de pedidos que tiene estas características lo que pupede permitir enfocar estrategias a un segmento específico. <br>
+ También se ha encontrado que no siempre el mayor volumen de pedidos da mayores ingresos, eso puede ser derivado al equipo comercial para que se evalúen campañas de captación de clientes o promociones para incrementar el monto promedio de los pedidos. <br><br>
+ <b>Herramientas:</b>
+ Se puede considerar que Google Sheets permite trabajar con los datos de manera más familiar debido a la faimiliaridad con Excel, sin embargo, cuando se cuentan con muchos datos suele demorar en cargar y cuenta con gráficos limitados.<br>
+ PoweBI permite trabajar con un volumen de datos elevado que ni Datawrapper acepta, lo que le da una gran ventaja; como punto a mejorar sería que no es tan intuitivo como la otra herramienta, pero permite varias configuraciones e incluso se pueden importar gráficos.
+ <br><br>
+ <b>Visualización de Datos:</b>
+ Se ha buscado contar con colores secuenciales, similares al naranja para no distraer mucho la vista.
+ <br>
+ Como limitaciones se ha tenido que no se contaba con datos para un mayor rango de fechas. <br>
+ La muestra que se tiene estaba acotada a pocos meses por lo que no se han tenido muchos datos para utilizar gráficos lineales y se han utilizado gráficos de barras para comparar y ver como evolucionan los valores. <br>
+ Para expresar composición se han utilizado gráficos de tartas y algunas barras apiladas, cuando se tenían pocas categorías para representar. <br>
+ Se ha utilizado una tabla y algunos gráficos compuestos para mostrar varias categorías. <br><br>
+  <br>Fuente de datos:<a href="https://docs.google.com/spreadsheets/d/13ysafvG-jSu0fKXdSnN0-AsY1Gzd_3XR2Ie8Z5RHHv8/edit?usp=sharing">Pedidos</a></p>
